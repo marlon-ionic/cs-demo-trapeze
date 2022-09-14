@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "capacitor:sync:after": "${BUILD_ENV:=development} npx trapeze run trapeze.config.$BUILD_ENV.yaml -y"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@capacitor/app": "4.0.1",
     "@capacitor/core": "4.2.0",
     "@capacitor/haptics": "4.0.1",
+    "@capacitor/ios": "4.2.0",
     "@capacitor/keyboard": "4.0.1",
     "@capacitor/status-bar": "4.0.1",
     "@ionic/angular": "^6.1.9",
