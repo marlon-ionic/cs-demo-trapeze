@@ -1,10 +1,10 @@
 vars:
   BUNDLE_ID:
-    default: io.ionic.starter.dev
+    default: io.ionic.starter
   APP_DISPLAY_NAME:
-    default: "[DEV] My App"
+    default: "My App"
   APP_PRODUCT_NAME:
-    default: "[DEV] My App"
+    default: "My App"
 
 platforms:
   android:

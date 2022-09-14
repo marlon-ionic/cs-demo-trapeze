@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "capacitor:sync:after": "${BUILD_ENV:=development} npx trapeze run trapeze.config.$BUILD_ENV.yaml -y"
+    "trapeze:dev": "npx trapeze run trapeze.config.development.yaml -y",
+    "trapeze:prod": "npx trapeze run trapeze.config.production.yaml -y"
   },
   "private": true,
   "dependencies": {
